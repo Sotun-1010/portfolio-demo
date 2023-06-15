@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Html and body */
+
+html {
+    background: #F2F2F2;
+}
+
+body {
+    padding: 2rem 9rem 0rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/* Profile flex section */
+
+.profile-flex {
+    display: flex;
+    padding: 1.375rem;
+    align-items: start;
+    gap: 2.1rem;
+    /* justify-content: space-between; */
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 42px;
+}
+
+.profile-flex .image {
+    max-width: 271.86px;
+    max-height: 266.14px;
+}
+
+.profile-flex .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.profile-flex .profile-info {
+    width: 100%;
+    padding: 0rem .1rem;
+}
+
+.profile-flex .profile-info .bio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    gap: 1%;
+}
+
+.profile-info .bio .name-and-role .name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29.26px;
+    color: #4F4F4F;
+}
+
+.profile-info .bio .name-and-role .role {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21.94px;
+}
+
+.profile-info .bio .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.profile-info .bio .contact-info .mail, .profile-info .bio .contact-info .phone  {
+    display: flex;
+    align-items: center;
+    /* gap: 1%; */
+}
+
+.profile-info .bio .contact-info .mail p, .profile-info .bio .contact-info .phone p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21.94px;
+    color: #4F4F4F;
+    margin-left: 10px;
+}
+
+.profile-info .bio .contact-info .mail p a {
+    text-decoration: none;
+    color: #2F80ED;
+}
+
+.profile-info .bio .contact-info .mail p a:hover {
+    color: #2F80ED;
+    transition: all .5s ease-in-out;
+}
+
+.profile-info .text {
+    color: #828282;
+    font-size: 14px;
+}
+
+/* Main section */
+.main {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 350px));
+    grid-template-rows: 310px;
+    justify-content: stretch;
+    align-items: stretch;
+    column-gap: 39px;
+    row-gap: 42px;
+}
+
+/* Front end */
+.main .front-end {
+    padding: 1.5rem;
+    background: #fff;
+    max-width: 600px;
+    /* height: 303px; */
+    display: flex;
+    flex-direction: column;
+    gap: 17.07px;
+    border-radius: 12px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.main .front-end h4 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 18px;
+    color: #4F4F4F;
+}
+
+.front-end progress {
+    width: 40%;
+}
+
+.main .front-end .react, .main .front-end .javascript, .main .front-end .css, .main .front-end .html, .main .front-end .bootstrap, .main .front-end .tailwind {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+/* Hobbies */
+.main .hobbies {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    max-width: 600px;
+    /* min-width: 415.02px; */
+    /* margin-top: 42px; */
+    /* margin-bottom: 42px; */
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+}
+
+.main .hobbies h4 {
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #4F4F4F;
+}
+
+.main .hobbies .image {
+    max-width: 450px;
+    margin-top: 26px;
+}
+
+.main .hobbies .image img {
+    width: 100%;
+    height: 139px;
+    border-radius: 12px;
+}
+
+.main .hobbies h5 {
+    margin: 26px 0px 10px 0px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+    color: #333333;
+}
+
+.main .hobbies .text {
+    font-size: 12px;
+    line-height: 19.5px;
+    color: #828282;
+}
+
+/* blog */
+.main .blog {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 20px;
+    max-width: 596px;
+    /* margin-bottom: 42px; */
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+} 
+
+.main .blog h4 {
+    font-size: 16px;
+    color: #E0E0E0;
+    line-height: 19.5px;
+}
+
+.main .blog .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.main .blog .top .h2 {
+    margin-top: 21px;
+}
+
+.main .blog .top .h2 h2 {
+    font-size: 24px;
+    line-height: 29.26px;
+    font-weight: 500;
+}
+
+.main .blog .top .image {
+    max-width: 483px;
+    max-height: 337px;
+}
+
+.main .blog .top .image img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 20px;
+    
+}
+
+.main .blog .bottom p {
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #828282;
+    width: 85%;
+    margin-bottom: 66px;
+}
+
+.dev-to p a {
+    text-decoration: none;
+    color: #2F80ED;
+}
+
+/* experiences */
+.main .experiences {
+    background: #fff;
+    max-width: 592px;
+    border-radius: 12px;
+    padding: 17px 31.23px 33px;
+    /* margin-bottom: 42px; */
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+    
+}
+
+.main .experiences h4 {
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #4F4F4F;
+    margin-bottom: 44px;
+}
+
+.main .experiences .image {
+    max-width: 119.25px;
+}
+
+.main .experiences .image img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.main .experiences .red-logo {
+    display: flex;
+    justify-content: space-between;
+    gap: 7%;
+    margin-bottom: 36px
+}
+
+.main .experiences .hermes {
+    display: flex;
+    justify-content: space-between;
+    gap: 7%;
+}
+
+.main .experiences .red-logo .text .date, .main .experiences .hermes .text .date {
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #828282;
+    margin-bottom: 12px;
+}
+
+.main .experiences .red-logo .text h5, .main .experiences .hermes .text h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: #333333;
+    margin-bottom: 33px;
+}
+
+.main .experiences .red-logo .text .description, .main .experiences .hermes .text .description {
+    color: #828282;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+
+/* projects */
+.main .projects {
+    margin-bottom: 36px;
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+}
+
+.main .projects .top {
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 36px;
+    width: 100%;
+}
+
+.main .projects .top h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px;
+    color: #4F4F4F;
+}
+
+.main .projects .top .project-indicator {
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+
+.main .projects .top .project-indicator .react, .main .projects .top .project-indicator .bootstrap, .main .projects .top .project-indicator .responsive, .main .projects .top .project-indicator .tailwind {
+    border: .5px solid black;
+    padding: 8px 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.main .projects .top .project-indicator .react:hover, .main .projects .top .project-indicator .bootstrap:hover, .main .projects .top .project-indicator .tailwind:hover {
+    color: #2F80ED;
+    border: .5px solid #2F80ED;
+    transition: all .5s ease-in;
+}
+
+.main .projects .top .project-indicator .responsive{
+    background: #2F80ED;
+    color: #F2F2F2;
+    border: none;
+}
+
+
+/* bottom */
+.main .projects .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1%;
+}
+
+.recipe, .gallery, .checkout {
+    padding: 18px;
+    background: #dad8d8;
+    /* color: #fff; */
+    border-radius: 12px;
+    max-width: 328.49px;
+}
+
+.main .projects .bottom .image {
+    max-width: 292px;
+}
+
+.main .projects .bottom img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.main .projects .bottom .tags {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-top: 24px;
+    width: 70%;
+}
+
+.main .projects .bottom .tags p {
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+.main .projects .bottom .title {
+    margin-top: 22px;
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #333333;
+}
+
+.main .projects .bottom .text {
+    margin-bottom: 41px;
+}
+
+.main .projects .bottom .text p {
+    color: #828282;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+.main .projects .bottom .buttons {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .projects .bottom .buttons .demo {
+    background: #2F80ED;
+    padding: 13px 40px;
+    max-width: 135px; 
+    border: none;
+    border-radius: 12px;
+    /* margin-right: 11px; */
+}
+
+.main .projects .bottom .buttons .demo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21.94px;
+}
+
+.main .projects .bottom .buttons .code {
+    background: #dad8d8;
+    padding: 13px 40px;
+    max-width: 135px; 
+    border: .5px solid #2F80ED;
+    border-radius: 12px;
+}
+
+.main .projects .bottom .buttons .code a {
+    color: #2F80ED;
+    font-size: 18px;
+    line-height: 21.94px;
+    text-decoration: none;
+}
+
+/* Pagination */
+.pagination {
+    margin-bottom: 147px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 12px;
+    grid-column: 1 / 5;
+    grid-row: 6 / 7;
+}
+
+.pagination .ellipses {
+    border: none !important;
+    cursor: default !important;
+    color: #333333 !important;
+}
+
+.pagination  div {
+    border: .8px solid #4F4F4F;
+    padding: 12px 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.pagination  div:hover {
+    border: .8px solid #2F80ED;
+    color: #2F80ED;
+}
+
+.pagination .active {
+    color: #fff !important;
+    background: #2F80ED !important;
+    border: none !important;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1094px) {
+    body {
+        padding: 2rem 2rem 0rem;
+    }
+}
+
+@media screen and (max-width: 928px) {
+    .main .projects .bottom .buttons {
+        flex-direction: column;
+    }
+
+    .main .projects .bottom .buttons button {
+        width: 100%;
+    }
+
+    .main .projects .bottom .buttons .demo, .main .projects .bottom .buttons .code {
+        margin-bottom: 11px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .main .projects .bottom .tags p {
+        font-size: 12px;
+    }
+
+    .profile-flex {
+        flex-direction: column;
+    }
+
+    .profile-flex .image {
+        max-width: 100%;
+    }
+    
+    .profile-flex .profile-info .bio {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 674px) {
+    .main .projects .top .project-indicator {
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .projects .bottom {
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .main .projects .top .project-indicator {
+        gap: 1%;
+    }
+
+    .recipe, .gallery, .checkout {
+        max-width: 100%;
+    }
+
+    .main .projects .bottom .image {
+        max-width: 100%;
+    }
+
+    .pagination {
+        margin-bottom: 46px;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .main .projects .top .project-indicator {
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .main .projects .top .project-indicator .react, .main .projects .top .project-indicator .bootstrap, .main .projects .top .project-indicator .responsive, .main .projects .top .project-indicator .tailwind {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main .experiences .hermes, .main .experiences .red-logo {
+        flex-direction: column;
+    }
+
+    .pagination {
+        gap: 4px;
+    }
+    .pagination div {
+        padding: 6px 7.5px;
+    }
+
+    .footer p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    .profile-info .bio .contact-info .mail, .profile-info .bio .contact-info .phone  {
+        flex-direction: column;
+        gap: 1%;
+        align-items: start;
+    }
+    
+    .profile-info .bio .contact-info .mail p, .profile-info .bio .contact-info .phone p {
+        margin-left: 0;
+        font-size: 10px;
+    }
+}
